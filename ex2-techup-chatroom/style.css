@@ -1,1 +1,122 @@
-/* Start coding here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.chatroom { 
+    width: 800px;
+    height: 650px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+.chat-header {
+    background-color: #808080; 
+    color: #fff;
+    text-align: start;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.chat-boxes {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.chat-bubble {
+    background-color: #666666;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    text-align: center;
+}
+
+
+.chat-bubble:first-child {
+    left: 20px;
+    top: 240px;
+}
+
+.chat-bubble:last-child {
+    left: 20px;
+    top: 290px;
+    position: relative;
+}
+
+.chat-messages {
+    position: relative;
+}
+
+.message {
+    max-width: 20%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.sender {
+    background-color: #4CAF50;
+    color: #fff;
+    align-self: flex-end;
+    position: relative;
+    margin-left: auto;
+}
+.unsender{
+    background-color: #e2e2e2;
+    color: #fff;
+    align-self: flex-end;
+    position: relative;
+    margin-left: auto;
+}
+.close-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #b8b8b8;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+
+.emojis {
+    background-color: #4CAF50;
+    max-width: 20%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: auto;
+}
+
+
+@media (max-width: 800px) {
+    .chatroom {
+        width: 95%;
+    }
+
+    .message {
+        max-width: 80%;
+    }
+}
